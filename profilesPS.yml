@@ -1,0 +1,19 @@
+dbt_project:
+  outputs:
+    dev:
+      catalog: dbt_project
+      host: dbc-81a4cb08-d6ed.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/748c55c269cc33df
+      schema: default
+      threads: 1
+      token: 
+      type: databricks
+    prod:
+      catalog: dbt_project_prod
+      host: dbc-81a4cb08-d6ed.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/748c55c269cc33df
+      schema: default
+      threads: 1
+      token: 
+      type: databricks
+  target: dev
