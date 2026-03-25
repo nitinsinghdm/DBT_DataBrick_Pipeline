@@ -38,6 +38,8 @@ Databricks Source Tables<br><br>
 ---
 ## 📊 Source Data (Databricks)
 
+![Databricks Catalog](images/catalog.png)
+
 The project uses structured source tables stored in Databricks:
 
 - fact_sales – Sales transactions  
@@ -86,6 +88,8 @@ These tables are defined using dbt `source()` and form the foundation of the Bro
 ---
 
 ## 📂 Project Structure
+
+![Databricks Layers](images/layers.png)
 
 **dbt_project/**
 
@@ -312,9 +316,9 @@ dbt build
 
 # 📸 Screenshots
 
-## Databricks Catalog
-
 ## dbt Lineage DAG
+
+![Lineage DAG](images/lineage.png)
 
 ## Gold Layer Output
 
@@ -346,3 +350,4 @@ Data Analytics & Data Engineering
 ⭐ If you like this project
 
 Give it a star ⭐ on GitHub
+
