@@ -128,6 +128,10 @@ Each bronze model directly maps to a source table:
 
 1. bronze_sales
 
+### Example: Raw Sales Data (fact_sales)
+
+![Fact Sales](images/fact_sales.png)
+
 2. bronze_product
 
 3. bronze_customer
@@ -138,11 +142,16 @@ Each bronze model directly maps to a source table:
 
 6. bronze_returns
 
+### Example: Returns Data (fact_returns)
+
+![Fact Returns](images/fact_returns.png)
+
 Example:
 ```sql
 SELECT *
 FROM {{ source('source', 'dim_customer') }}
 ```
+
 ### 3. Silver Layer (Transformations)
 
 The silver layer performs:
@@ -314,17 +323,11 @@ dbt snapshot
 dbt build
 ```
 
-# 📸 Screenshots
-
-## dbt Lineage DAG
+# dbt Lineage DAG
 
 ![Lineage DAG](images/lineage.png)
 
-## Gold Layer Output
-
-## Snapshot Table (SCD Type 2)
-
-🚀 Key Highlights
+# 🚀 Key Highlights
 
 - Built end-to-end dbt pipeline on Databricks
 - Implemented Medallion Architecture (Bronze → Silver → Gold)
@@ -347,7 +350,7 @@ dbt build
 Nitin Singh
 Data Analytics & Data Engineering
 
-⭐ If you like this project
+### ⭐ If you like this project
 
-Give it a star ⭐ on GitHub
+### Give it a star ⭐ on GitHub
 
